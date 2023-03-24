@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container-fluid " style={ {backgroundColor:'black',  display: 'flex',height:'100vh',alignContent:'center', justifyContent: 'center' } } >
+      <div className="container-fluid " style={ {backgroundColor:'#1A1A1D',  display: 'flex',height:'100vh',alignContent:'center', justifyContent: 'center' } } >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
