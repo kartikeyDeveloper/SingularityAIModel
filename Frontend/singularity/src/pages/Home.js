@@ -1,3 +1,9 @@
-export default function Team(){
-    return <h1>Home</h1>
+import React from 'react'
+
+const Home = () => {
+  return (
+    <div className='text-white'>Home</div>
+  )
 }
+
+export default Home

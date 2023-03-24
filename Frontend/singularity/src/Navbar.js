@@ -1,10 +1,10 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
-
+import logo from './assests/logo.png'
 export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        Cognition Crew
+        <img src={logo} style={{width:'200px',height:"70px"}} />
       </Link>
       <ul>
         <CustomLink to="/team">Team</CustomLink>
