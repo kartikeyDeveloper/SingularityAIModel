@@ -18,7 +18,7 @@ const [form, setForm] = useState(
   }
 )
 const onChangeHandler = ( e ) => {
-  setForm( { ...form, [e.target.id]: e.target.value } );
+  setForm( { ...form, [e.target.name]: e.target.value } );
   console.log( form )
 }
 const submit = async ( e ) => {
@@ -26,8 +26,10 @@ const submit = async ( e ) => {
     e.preventDefault();
     console.log( `${ url }` );
     // console.log( blog );
-    await axios.post( `${ url }`, form )
-    navigate( "/" )
+    const response=await axios.post( `${ url }`, form )
+    console.log("response",response);
+
+    navigate( "/op" )
   } catch ( error ) {
     console.log( error );
   }
