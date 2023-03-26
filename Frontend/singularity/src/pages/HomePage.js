@@ -3,8 +3,8 @@ import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
 const Home = () => {
-//  const url = process.env.REACT_APP_URL
-  const url = 'http://127.0.0.1:8000/predict'
+ const url = process.env.REACT_APP_URL
+  // const url = 'http://127.0.0.1:8000/predict'
 const navigate = useNavigate()
 const [form, setForm] = useState(
   {
