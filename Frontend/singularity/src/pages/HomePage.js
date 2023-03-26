@@ -31,7 +31,7 @@ const submit = async ( e ) => {
     // const response={data:1}
     console.log("response",response);
 
-    navigate( "/op" ,{state:response})
+    navigate( "/op" ,{state:response.data.result})
   } catch ( error ) {
     console.log( error );
   }
