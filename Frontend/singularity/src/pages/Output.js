@@ -1,12 +1,16 @@
 import React from 'react'
+import { useLocation } from 'react-router'
 
 const Output = () => {
+    const location=useLocation();
+    const data=location.state.data;
     return (
+        <div className="container-fluid " style={ { backgroundColor: 'black', height: '100%' } } >
         <div class="row" style="margin-bottom: 477px;">
             <div class="col-md-3"></div>
             <div class="col-md-6">
 
-                <div class="card card-body alert alert-danger"><center>Sorry! Please consult DOCTOR.</center></div>
+                <div class="card card-body alert alert-danger"><center>{data}Sorry! Please consult DOCTOR.</center></div>
 
                 <div class="card card-body alert alert-success"><center>Great! You are HEALTHY.</center></div>
 
@@ -17,6 +21,7 @@ const Output = () => {
                 </div>
             </div>
             <div class="col-md-3"></div>
+        </div>
         </div>
     )
 }

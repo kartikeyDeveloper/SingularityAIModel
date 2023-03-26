@@ -30,7 +30,7 @@ const submit = async ( e ) => {
     const response=await axios.post( `${ url }`, form )
     console.log("response",response);
 
-    navigate( "/op" )
+    navigate( "/op" ,{data:response})
   } catch ( error ) {
     console.log( error );
   }
