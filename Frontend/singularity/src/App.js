@@ -1,6 +1,6 @@
 import Navbar from "./Navbar"
 import Team from "./pages/Team"
-import Homecopy from "./pages/Home - Copy"
+import Homecopy from "./pages/HomePage"
 import { Route, Routes } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home";
