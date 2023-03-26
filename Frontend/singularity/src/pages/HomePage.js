@@ -28,9 +28,9 @@ const submit = async ( e ) => {
     console.log( `${ url }` );
     // console.log( blog );
     const response=await axios.post( `${ url }`, form )
-    // const response={data:1}
+    // // const response={data:1}
     console.log("response",response);
-
+    //  const response={data:{result:1}};
     navigate( "/op" ,{state:response.data.result})
   } catch ( error ) {
     console.log( error );
