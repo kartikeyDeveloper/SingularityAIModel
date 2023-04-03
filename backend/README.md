@@ -17,12 +17,12 @@ The model has been trained on [this dataset](https://www.kaggle.com/uciml/pima-i
 5. Run uvicorn main:app --reload
 
 ## Follow these steps if above don't work
-1-fix windows long path not support error follow this video to fix error (https: //www.youtube.com/watch?v=tMJU1-r5csg) 
-2-run "pip install -r requirements.txt" 
-3-run "pip install uvicorn" 
-4-run "pip install pydantic" 
-5-run "pip install fastapi" 
-6-run "python -m uvicorn main:app --reload" to start the backend server
+Fix Windows long path not supported error. Follow this video to fix the error (https://www.youtube.com/watch?v=tMJU1-r5csg).
+Run "pip install -r requirements.txt".
+Run "pip install uvicorn".
+Run "pip install pydantic".
+Run "pip install fastapi".
+Run "python -m uvicorn main:app --reload" to start the backend server.
   
 ## Model update
 Run notebook notebook/generate_model.ipynb
